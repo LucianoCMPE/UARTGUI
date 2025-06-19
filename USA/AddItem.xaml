@@ -1,0 +1,101 @@
+﻿<Window x:Class="USA.AddItem"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:USA"
+      mc:Ignorable="d" 
+      Height="400" Width="600"
+      WindowState="Normal"
+      WindowStartupLocation="CenterOwner"
+      SizeToContent="Manual"
+      Background="LightGray"
+      Title="AddItem">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="150"/>
+
+            <ColumnDefinition Width="200"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="25"/>
+
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Column="0">
+            <TextBlock  Text="Test Name"
+                        VerticalAlignment="Center"/>
+
+        </Grid>
+
+        <Grid Grid.Column="1">
+            <TextBox x:Name="testNameInput" />
+        </Grid>
+        <Grid Grid.Column="0" Grid.Row="1">
+            <TextBlock  Text="Include Header (Hex)"
+                        VerticalAlignment="Center"/>
+
+        </Grid>
+
+        <Grid Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <CheckBox x:Name="isHeader" Checked="AddHeaderField" Unchecked="RemoveHeaderField"/>
+        </Grid>
+
+
+        <Grid Grid.Column="2" Grid.Row="1">
+            <TextBox x:Name="headerValue" Visibility="Hidden"/>
+        </Grid>
+
+        <Grid Grid.Column="0" Grid.Row="2">
+            <TextBlock  Text="Command # (Decimal)"
+                 VerticalAlignment="Center"/>
+
+        </Grid>
+
+        <Grid Grid.Column="1" Grid.Row="2">
+            <TextBox x:Name="commandNumber" />
+        </Grid>
+        <Grid Grid.Column="0" Grid.Row="3">
+            <TextBlock  Text="Payload Length (Decimal)"
+                 VerticalAlignment="Center"/>
+
+        </Grid>
+
+        <Grid Grid.Column="1" Grid.Row="3">
+            <TextBox x:Name="payloadLength" />
+        </Grid>
+
+        <Button Grid.Column="1"
+                Height="20"
+                Width="70"
+                Background="Gray"
+                BorderBrush="Black"
+                Grid.Row="5"
+                Content="Submit"
+                Click="submitClick"
+                Margin="0,0,0,0"/>
+
+        <!--Grid Grid.ColumnSpan="3" Grid.Row= "12" Grid.Column="2">
+            
+            
+        </Grid-->
+
+    </Grid>
+</Window>
