@@ -24,21 +24,57 @@ namespace USA
     public partial class MainWindow : Window
     {
         private SerialPort serialPort;
+        private string[] portsAvailable;
         public YourCollection MyObjects { get; } = new YourCollection();
+        public ComCollection MyComObjects { get; } = new ComCollection();
         public MainWindow()
         {
             // set datacontext to the window's instance.
             this.DataContext = this;
             InitializeComponent();
-            serialPort = new SerialPort("COM12", 9600, Parity.None, 8, StopBits.One);
+            //serialPort = new SerialPort("COM12", 9600, Parity.None, 8, StopBits.One);
+            portsAvailable = SerialPort.GetPortNames();
+            MyComObjects.Add("Choose a COM");
+            MyComObjects.AddRange(portsAvailable);
+            comChoice.SelectedIndex = 0; // Set default selection to "Choose a COM"
         }
+        
+        public class ComCollection : ObservableCollection<string>
+        {
+            public void AddRange(IEnumerable<string> portNames)
+            {
+                foreach (var port in portNames)
+                {
+                    this.Add(port);
+                }
+            }
+        }
+
+        public class MyComObject : INotifyPropertyChanged
+        {
+            private string _portName;
+            public string PortName
+            {
+                get { return _portName; }
+                set
+                {
+                    if (_portName != value)
+                    {
+                        _portName = value;
+                        PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(PortName)));
+                    }
+                }
+            }
+            public event PropertyChangedEventHandler PropertyChanged;
+        }
+
+
         public class YourCollection : ObservableCollection<MyObject>
         {
             // some wrapper functions for example:
-        public void Add(string title, bool header, string headerText, string commandNumber, string payLength)
-        {
-                this.Add(new MyObject { Title = title, Header = header, HeaderText = headerText, commandNum = commandNumber, payLoadLen = payLength });
-                   }
+            public void Add(string title, bool header, string headerText, string commandNumber, string payLength){
+                    this.Add(new MyObject { Title = title, Header = header, HeaderText = headerText, commandNum = commandNumber, payLoadLen = payLength });
+            }
         }
 
         // by implementing the INotifyPropertyChanged, changes to properties
@@ -243,19 +279,32 @@ namespace USA
                 messageBytes[i + 3] = payloadBytes[i]; // set header byte, command number byte, and payload bytes
             }
 
+
+            if ((string)comChoice.SelectedValue == null || comChoice.SelectedIndex == 0)
+            {
+                MessageBox.Show(this, "Please select a COM port.");
+                return;
+            }
+            else
+            {
+                serialPort = new SerialPort((string)comChoice.SelectedValue, 9600, Parity.None, 8, StopBits.One);
+            }
+
+
             try
             {
                 serialPort.Open();
                 serialPort.Write(messageBytes, 0, messageBytes.Length);
                 serialPort.Close();
+                MessageBox.Show(this,"Complete!");
             }
             catch (UnauthorizedAccessException)
             {
-                MessageBox.Show("COM port is in use by another application.");
+                MessageBox.Show(this, "COM port is in use by another application.");
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error: {ex.Message}");
+                MessageBox.Show(this, $"Error: {ex.Message}");
             }
         }
     }

@@ -81,8 +81,12 @@
                 </Menu>
             </Grid>
 
+            <Grid Margin="10,5,0,0" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="4">
+                <ComboBox x:Name="comChoice" ItemsSource="{Binding MyComObjects}"/>
+            </Grid>
+
             
-            <Grid Margin="10,7,0,0" Grid.Column="0" Grid.Row="1" Grid.RowSpan="16" Grid.ColumnSpan="4">
+            <Grid Margin="10,40,0,0" Grid.Column="0" Grid.Row="1" Grid.RowSpan="16" Grid.ColumnSpan="4">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="*"/>

@@ -1,32 +1,29 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\UART-GUI\\USA\\",
+  "WorkspaceRootPath": "D:\\UARTGUI\\USA\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FE51CDFC-D635-40B7-9A26-CD0DD7EBC7CE}|USA.csproj|d:\\uart-gui\\usa\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FE51CDFC-D635-40B7-9A26-CD0DD7EBC7CE}|USA.csproj|d:\\uartgui\\usa\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FE51CDFC-D635-40B7-9A26-CD0DD7EBC7CE}|USA.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FE51CDFC-D635-40B7-9A26-CD0DD7EBC7CE}|USA.csproj|d:\\uart-gui\\usa\\additem.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FE51CDFC-D635-40B7-9A26-CD0DD7EBC7CE}|USA.csproj|solutionrelative:additem.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FE51CDFC-D635-40B7-9A26-CD0DD7EBC7CE}|USA.csproj|d:\\uart-gui\\usa\\additem.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{FE51CDFC-D635-40B7-9A26-CD0DD7EBC7CE}|USA.csproj|solutionrelative:additem.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FE51CDFC-D635-40B7-9A26-CD0DD7EBC7CE}|USA.csproj|d:\\uart-gui\\usa\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{FE51CDFC-D635-40B7-9A26-CD0DD7EBC7CE}|USA.csproj|d:\\uartgui\\usa\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{FE51CDFC-D635-40B7-9A26-CD0DD7EBC7CE}|USA.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Luciano\\AppData\\Local\\Temp\\.vsdbgsrc\\aad6be2495d0a786b94b3514a5b6903407fe2d6a75ad7e505df6a9d895927867\\XamlReader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FE51CDFC-D635-40B7-9A26-CD0DD7EBC7CE}|USA.csproj|d:\\uartgui\\usa\\additem.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE51CDFC-D635-40B7-9A26-CD0DD7EBC7CE}|USA.csproj|solutionrelative:additem.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FE51CDFC-D635-40B7-9A26-CD0DD7EBC7CE}|USA.csproj|d:\\uart-gui\\usa\\usa.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "AbsoluteMoniker": "D:0:0:{FE51CDFC-D635-40B7-9A26-CD0DD7EBC7CE}|USA.csproj|d:\\uartgui\\usa\\additem.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{FE51CDFC-D635-40B7-9A26-CD0DD7EBC7CE}|USA.csproj|solutionrelative:additem.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE51CDFC-D635-40B7-9A26-CD0DD7EBC7CE}|USA.csproj|d:\\uartgui\\usa\\usa.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
       "RelativeMoniker": "D:0:0:{FE51CDFC-D635-40B7-9A26-CD0DD7EBC7CE}|USA.csproj|solutionrelative:usa.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FE51CDFC-D635-40B7-9A26-CD0DD7EBC7CE}|USA.csproj|d:\\uart-gui\\usa\\usa.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{FE51CDFC-D635-40B7-9A26-CD0DD7EBC7CE}|USA.csproj|d:\\uartgui\\usa\\usa.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{FE51CDFC-D635-40B7-9A26-CD0DD7EBC7CE}|USA.csproj|solutionrelative:usa.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
@@ -41,25 +38,26 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "AddItem.xaml",
-              "DocumentMoniker": "D:\\UART-GUI\\USA\\AddItem.xaml",
+              "DocumentMoniker": "D:\\UARTGUI\\USA\\AddItem.xaml",
               "RelativeDocumentMoniker": "AddItem.xaml",
-              "ToolTip": "D:\\UART-GUI\\USA\\AddItem.xaml",
+              "ToolTip": "D:\\UARTGUI\\USA\\AddItem.xaml",
               "RelativeToolTip": "AddItem.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-06-08T03:19:23.419Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "AddItem.xaml.cs",
-              "DocumentMoniker": "D:\\UART-GUI\\USA\\AddItem.xaml.cs",
+              "DocumentMoniker": "D:\\UARTGUI\\USA\\AddItem.xaml.cs",
               "RelativeDocumentMoniker": "AddItem.xaml.cs",
-              "ToolTip": "D:\\UART-GUI\\USA\\AddItem.xaml.cs",
+              "ToolTip": "D:\\UARTGUI\\USA\\AddItem.xaml.cs",
               "RelativeToolTip": "AddItem.xaml.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAAB4AAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAADAAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-08T03:27:16.253Z",
               "IsPinned": true,
@@ -67,25 +65,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "D:\\UART-GUI\\USA\\MainWindow.xaml",
+              "DocumentMoniker": "D:\\UARTGUI\\USA\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
-              "ToolTip": "D:\\UART-GUI\\USA\\MainWindow.xaml",
+              "ToolTip": "D:\\UARTGUI\\USA\\MainWindow.xaml",
               "RelativeToolTip": "MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-06-07T19:04:35.937Z",
-              "IsPinned": true
+              "WhenOpened": "2025-06-20T02:50:37.328Z",
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "D:\\UART-GUI\\USA\\MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\UARTGUI\\USA\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
-              "ToolTip": "D:\\UART-GUI\\USA\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\UARTGUI\\USA\\MainWindow.xaml.cs",
               "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AgIAAKIAAAAAAAAAAAAiwNIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAPwAAAAAAAAAAAD4vxABAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-08T03:46:32.409Z",
               "IsPinned": true,
@@ -97,37 +96,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "XamlReader.cs",
-              "DocumentMoniker": "C:\\Users\\Luciano\\AppData\\Local\\Temp\\.vsdbgsrc\\aad6be2495d0a786b94b3514a5b6903407fe2d6a75ad7e505df6a9d895927867\\XamlReader.cs",
-              "ToolTip": "C:\\Users\\Luciano\\AppData\\Local\\Temp\\.vsdbgsrc\\aad6be2495d0a786b94b3514a5b6903407fe2d6a75ad7e505df6a9d895927867\\XamlReader.cs [Read Only]",
-              "ViewState": "AgIAAJ4BAAAAAAAAAAAuwLUBAAACAAAAAQAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T05:02:51.241Z",
-              "EditorCaption": " [Read Only]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "USA.csproj",
-              "DocumentMoniker": "D:\\UART-GUI\\USA\\USA.csproj",
+              "DocumentMoniker": "D:\\UARTGUI\\USA\\USA.csproj",
               "RelativeDocumentMoniker": "USA.csproj",
-              "ToolTip": "D:\\UART-GUI\\USA\\USA.csproj",
+              "ToolTip": "D:\\UARTGUI\\USA\\USA.csproj",
               "RelativeToolTip": "USA.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-06-11T04:31:44.022Z"
+              "WhenOpened": "2025-06-11T04:31:44.022Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "USA",
-              "DocumentMoniker": "D:\\UART-GUI\\USA\\USA.csproj",
+              "DocumentMoniker": "D:\\UARTGUI\\USA\\USA.csproj",
               "RelativeDocumentMoniker": "USA.csproj",
-              "ToolTip": "D:\\UART-GUI\\USA\\USA.csproj",
+              "ToolTip": "D:\\UARTGUI\\USA\\USA.csproj",
               "RelativeToolTip": "USA.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-06-11T04:31:47.466Z"
+              "WhenOpened": "2025-06-11T04:31:47.466Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\UART-GUI\\USA\\USA.csproj": {}
+    "D:\\UARTGUI\\USA\\USA.csproj": {}
   },
   "projects": {
-    "D:\\UART-GUI\\USA\\USA.csproj": {
+    "D:\\UARTGUI\\USA\\USA.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\UART-GUI\\USA\\USA.csproj",
+        "projectUniqueName": "D:\\UARTGUI\\USA\\USA.csproj",
         "projectName": "USA",
-        "projectPath": "D:\\UART-GUI\\USA\\USA.csproj",
+        "projectPath": "D:\\UARTGUI\\USA\\USA.csproj",
         "packagesPath": "C:\\Users\\Luciano\\.nuget\\packages\\",
-        "outputPath": "D:\\UART-GUI\\USA\\obj\\",
+        "outputPath": "D:\\UARTGUI\\USA\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
