@@ -47,6 +47,8 @@ namespace USA
             if (Owner is MainWindow mainWindow)
             {
                 mainWindow.AddTestData();
+                MessageBox.Show("Test added successfully!");
+                this.Close();
             }
         }
 

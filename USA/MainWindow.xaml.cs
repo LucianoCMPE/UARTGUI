@@ -29,10 +29,10 @@ namespace USA
         public ComCollection MyComObjects { get; } = new ComCollection();
         public MainWindow()
         {
-            // set datacontext to the window's instance.
+
             this.DataContext = this;
             InitializeComponent();
-            //serialPort = new SerialPort("COM12", 9600, Parity.None, 8, StopBits.One);
+
             portsAvailable = SerialPort.GetPortNames();
             MyComObjects.Add("Choose a COM");
             MyComObjects.AddRange(portsAvailable);
@@ -50,25 +50,6 @@ namespace USA
             }
         }
 
-        public class MyComObject : INotifyPropertyChanged
-        {
-            private string _portName;
-            public string PortName
-            {
-                get { return _portName; }
-                set
-                {
-                    if (_portName != value)
-                    {
-                        _portName = value;
-                        PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(PortName)));
-                    }
-                }
-            }
-            public event PropertyChangedEventHandler PropertyChanged;
-        }
-
-
         public class YourCollection : ObservableCollection<MyObject>
         {
             // some wrapper functions for example:
@@ -77,8 +58,6 @@ namespace USA
             }
         }
 
-        // by implementing the INotifyPropertyChanged, changes to properties
-        // will update the listbox on-the-fly
         public class MyObject : INotifyPropertyChanged
         {
             private string _title;
@@ -174,7 +153,7 @@ namespace USA
                 Owner = this,                                     // centers on main window
                 WindowStartupLocation = WindowStartupLocation.CenterOwner
             };
-            wnd.Show();  // or ShowDialog()
+            wnd.ShowDialog();
 
         }
 
@@ -235,9 +214,6 @@ namespace USA
         public void AddTestData ()
         {
             MyObjects.Add(wnd.testName, wnd.headerEnable, wnd.headerText, wnd.commandID, wnd.payLength);
-            //headerEnable
-            //commandID
-            //payLength
 
         }
 
