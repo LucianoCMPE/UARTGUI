@@ -1,7 +1,9 @@
 ﻿using Microsoft.Win32;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Diagnostics;
 using System.IO;
+using System.IO.Ports;
 using System.Reflection.PortableExecutable;
 using System.Text;
 using System.Windows;
@@ -14,7 +16,6 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using System.IO.Ports;
 
 namespace USA
 {
@@ -25,6 +26,8 @@ namespace USA
     {
         private SerialPort serialPort;
         private string[] portsAvailable;
+        private char[] payloadBits;  // Holds the entire binary payload
+        private int payloadLength;   // Number of bytes or segments (the "rows" you mentioned)
         public YourCollection MyObjects { get; } = new YourCollection();
         public ComCollection MyComObjects { get; } = new ComCollection();
         public MainWindow()
@@ -169,12 +172,19 @@ namespace USA
             var listBoxItem = ItemsControl.ContainerFromElement(listBox, grid) as ListBoxItem;
             if (listBoxItem != null)
             {
+                listBox.SelectionChanged -= ListBox_SelectionChanged;
                 listBox.SelectedItem = listBoxItem.DataContext;
 
                 headerPreview.Text = "0x" + ((MyObject)listBoxItem.DataContext).HeaderText;
                 commandPreview.Text = ((MyObject)listBoxItem.DataContext).commandNum;
                 lengthPreview.Text = ((MyObject)listBoxItem.DataContext).payLoadLen;
-            
+                payloadPreview.Text ="0x"; // Placeholder for payload preview
+
+                listBox.SelectionChanged += ListBox_SelectionChanged;
+
+                // Manually call ListBox_SelectionChanged to handle the rest
+                ListBox_SelectionChanged(listBox, new SelectionChangedEventArgs(ListBox.SelectionChangedEvent, new List<object>(), new List<object> { listBoxItem.DataContext }));
+
             }
 
         }
@@ -195,6 +205,8 @@ namespace USA
 
         private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            if (!int.TryParse(lengthPreview.Text, out int payloadLength)) return;
+            payloadBits = new string('0', payloadLength * 8).ToCharArray();  // 8 bits per byte
             if (e.AddedItems.Count == 0) return;
 
             var selectedTest = e.AddedItems[0] as MyObject;
@@ -202,21 +214,48 @@ namespace USA
 
             CheckboxPanel.Children.Clear();
 
-            for (int p = 0; p < int.Parse(selectedTest.payLoadLen); p++)
+            int[,] array = new int[int.Parse(selectedTest.payLoadLen), 8];
+
+            // Example using (row, col) indexing to calculate bit position
+            for (int p = 0; p < payloadLength; p++)
             {
-                for (int i = 7; i >= 0; i--){
+                for (int i = 7; i >= 0; i--)
+                {
                     var checkbox = new CheckBox
                     {
                         Content = i,
+                        Tag = (p * 8) + (7 - i), // Store the ABSOLUTE bit index in Tag
                         Margin = new Thickness(12),
                         Name = $"CheckBox_{p}_{i}",
                     };
-
+                    checkbox.Checked += CheckBox_Changed;
+                    checkbox.Unchecked += CheckBox_Changed;
                     CheckboxPanel.Children.Add(checkbox);
                 }
             }
             runTestButton.Visibility = Visibility.Visible;
 
+        }
+
+        private void CheckBox_Changed(object sender, RoutedEventArgs e)
+        {
+
+            var cb = sender as CheckBox;
+            if (cb == null) return;
+
+            int bitIndex = (int)cb.Tag;  // Absolute bit index in payloadBits array
+            payloadBits[bitIndex] = cb.IsChecked == true ? '1' : '0';
+
+            // Convert entire binary payload to hex in chunks of 8 bits
+            List<string> hexChunks = new List<string>();
+            for (int i = 0; i < payloadBits.Length; i += 8)
+            {
+                string byteString = new string(payloadBits, i, 8);
+                string hex = Convert.ToInt32(byteString, 2).ToString("X2");
+                hexChunks.Add("0x" + hex);
+            }
+
+            payloadPreview.Text = string.Join("-", hexChunks);
         }
         public void AddTestData ()
         {
