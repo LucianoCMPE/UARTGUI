@@ -170,7 +170,13 @@ namespace USA
             if (listBoxItem != null)
             {
                 listBox.SelectedItem = listBoxItem.DataContext;
+
+                headerPreview.Text = "0x" + ((MyObject)listBoxItem.DataContext).HeaderText;
+                commandPreview.Text = ((MyObject)listBoxItem.DataContext).commandNum;
+                lengthPreview.Text = ((MyObject)listBoxItem.DataContext).payLoadLen;
+            
             }
+
         }
 
         // Helper method to find parent of a specific type in the visual tree
@@ -210,6 +216,7 @@ namespace USA
                 }
             }
             runTestButton.Visibility = Visibility.Visible;
+
         }
         public void AddTestData ()
         {

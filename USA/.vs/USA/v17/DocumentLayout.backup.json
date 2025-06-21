@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "D:\\UARTGUI\\USA\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FE51CDFC-D635-40B7-9A26-CD0DD7EBC7CE}|USA.csproj|d:\\uartgui\\usa\\additem.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FE51CDFC-D635-40B7-9A26-CD0DD7EBC7CE}|USA.csproj|solutionrelative:additem.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FE51CDFC-D635-40B7-9A26-CD0DD7EBC7CE}|USA.csproj|d:\\uartgui\\usa\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FE51CDFC-D635-40B7-9A26-CD0DD7EBC7CE}|USA.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FE51CDFC-D635-40B7-9A26-CD0DD7EBC7CE}|USA.csproj|d:\\uartgui\\usa\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{FE51CDFC-D635-40B7-9A26-CD0DD7EBC7CE}|USA.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE51CDFC-D635-40B7-9A26-CD0DD7EBC7CE}|USA.csproj|d:\\uartgui\\usa\\additem.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE51CDFC-D635-40B7-9A26-CD0DD7EBC7CE}|USA.csproj|solutionrelative:additem.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FE51CDFC-D635-40B7-9A26-CD0DD7EBC7CE}|USA.csproj|d:\\uartgui\\usa\\additem.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -38,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
@@ -50,18 +50,17 @@
               "RelativeToolTip": "AddItem.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-06-08T03:19:23.419Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "AddItem.xaml.cs",
               "DocumentMoniker": "D:\\UARTGUI\\USA\\AddItem.xaml.cs",
               "RelativeDocumentMoniker": "AddItem.xaml.cs",
               "ToolTip": "D:\\UARTGUI\\USA\\AddItem.xaml.cs",
               "RelativeToolTip": "AddItem.xaml.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAADIAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAABQAAAAAAAAAAAAxwCIAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-08T03:27:16.253Z",
               "IsPinned": true,
@@ -69,7 +68,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "D:\\UARTGUI\\USA\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
@@ -82,13 +81,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "D:\\UARTGUI\\USA\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
               "ToolTip": "D:\\UARTGUI\\USA\\MainWindow.xaml.cs",
               "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AgIAAHEAAAAAAAAAAADwv4wAAABNAAAAAAAAAA==",
+              "ViewState": "AgIAAI0AAAAAAAAAAAAWwKwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-08T03:46:32.409Z",
               "IsPinned": true,
